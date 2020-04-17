@@ -7,9 +7,9 @@
 
   <!-- Add the following lines -->
   <!-- BootTheme should inherit from AppTheme -->
-  <style name="BootTheme" parent="AppTheme">
+  <style name="BootTheme" parent="Theme.AppCompat.Light.NoActionBar">
     <!-- set the generated bootsplash.xml drawable as activity background -->
-    <item name="android:background">@drawable/bootsplash</item>
+    <item name="android:windowIsTranslucent">@drawable/bootsplash</item>
   </style>
 
 </resources>
