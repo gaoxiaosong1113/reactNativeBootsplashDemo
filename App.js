@@ -15,7 +15,7 @@ import {
   Text,
   StatusBar,
 } from 'react-native';
-
+import RNBootSplash from 'react-native-bootsplash';
 import {
   Header,
   LearnMoreLinks,
@@ -24,11 +24,21 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+class Home extends React.Component {
+  componentDidMount() {
+    RNBootSplash.hide();
+  }
+  render() {
+    return <View style={{}} />;
+  }
+}
+
 const App: () => React$Node = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
+        <Home />
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
